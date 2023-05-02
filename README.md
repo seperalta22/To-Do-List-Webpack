@@ -43,7 +43,7 @@
 
 # 📖 Portfolio <a name="about-project"></a>
 
-Portfolio is a project with great potential.
+Todo List Webpack is a project with great potential.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -100,7 +100,7 @@ To get a local copy up and running, follow these steps.
 Clone this repository to your desired folder:
 
 ```sh
-  # git clone https://github.com/SergioPeralta22/Portfolio.git
+   git clone https://github.com/SergioPeralta22/To-Do-List-Webpack
 ```
 
 ### Install
@@ -174,9 +174,9 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- **Proyects Section** ✔️
-- **About me Section** ✔️
-- **Contact me Section** ✔️
+- **Add task feature** ✔️
+- **Delete task feature** ✔️
+- **Edit task feature** ✔️
 
 <!-- ## Walkthrough <a name="walkthrough"></a>
 
