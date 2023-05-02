@@ -28,7 +28,7 @@ if (!app.hasChildNodes()) {
     titleContainer.classList.add('title-container');
     app.appendChild(titleContainer);
 
-    const title = document.createElement('h1');
+    const title = document.createElement('h2');
     title.classList.add('title');
     title.textContent = "Today's To Do List";
     titleContainer.appendChild(title);
@@ -56,20 +56,30 @@ if (!app.hasChildNodes()) {
     list.classList.add('list');
     listContainer.appendChild(list);
 
+    const clearCompleted = document.createElement('button');
+    clearCompleted.classList.add('clear-completed');
+    clearCompleted.textContent = 'Clear all completed';
+    listContainer.appendChild(clearCompleted);
+
     tasks.forEach((task) => {
       const listItem = document.createElement('li');
       listItem.classList.add('list-item');
       list.appendChild(listItem);
 
+      const descContainer = document.createElement('div');
+      descContainer.classList.add('desc-container');
+      listItem.appendChild(descContainer);
+
       const checkbox = document.createElement('input');
       checkbox.classList.add('checkbox');
       checkbox.type = 'checkbox';
-      listItem.appendChild(checkbox);
+      checkbox.checked = task.completed;
+      descContainer.appendChild(checkbox);
 
       const description = document.createElement('p');
       description.classList.add('description');
       description.textContent = task.description;
-      listItem.appendChild(description);
+      descContainer.appendChild(description);
 
       const dotsIcon = document.createElement('img');
       dotsIcon.classList.add('dots-icon');

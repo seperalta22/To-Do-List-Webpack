@@ -1,11 +1,103 @@
-/* body {
-	background-color: canvas;
-	color: canvastext;
-	color-scheme: light dark;
-} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 *,
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 62.5%;
+}
+
+h1 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1rem;
+}
+
+.title {
+  font-size: 1rem;
+  margin: 0;
+  font-weight: normal;
+}
+
+.refresh-icon {
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+}
+
+.input-container {
+  width: 100%;
+  padding: 0;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-left: none;
+  font-style: italic;
+  color: #ccc;
+}
+
+.list-container {
+  width: 100%;
+}
+
+.list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.desc-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dots-icon {
+  cursor: all-scroll;
+  width: 1rem;
+  height: 1rem;
+}
+
+.clear-completed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem 1rem;
+  border: none;
+  border-top: 1px solid #ccc;
+  color: #a8a8a8;
 }
