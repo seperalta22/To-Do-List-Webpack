@@ -80,9 +80,9 @@ Todo List Webpack is a project with great potential.
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo Link](https://sergioperalta22.github.io/Portfolio/) -->
+- [Live Demo Link](https://sergioperalta22.github.io/To-Do-List-Webpack/)
 
-- No live demo available yet
+<!-- - No live demo available yet -->
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
