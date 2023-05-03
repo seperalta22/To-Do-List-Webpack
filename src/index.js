@@ -11,10 +11,10 @@ titleContainer.appendChild(refreshIcon);
 
 const addInput = document.getElementById('add-input');
 addInput.addEventListener('keypress', (e) => {
-	if (e.key === 'Enter' && addInput.value !== '') {
-		e.preventDefault();
-		inputAdd();
-	}
+  if (e.key === 'Enter' && addInput.value !== '') {
+    e.preventDefault();
+    inputAdd();
+  }
 });
 
 addList();
