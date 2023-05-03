@@ -7,15 +7,14 @@ const titleContainer = document.querySelector('.title-container');
 const refreshIcon = document.createElement('img');
 refreshIcon.src = refreshIcons;
 refreshIcon.classList.add('refresh-icon');
-refreshIcon.id = 'refresh';
 titleContainer.appendChild(refreshIcon);
 
 const addInput = document.getElementById('add-input');
 addInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter' && addInput.value !== '') {
-    e.preventDefault();
-    inputAdd();
-  }
+	if (e.key === 'Enter' && addInput.value !== '') {
+		e.preventDefault();
+		inputAdd();
+	}
 });
 
 addList();

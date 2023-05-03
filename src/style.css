@@ -90,6 +90,7 @@ h1 {
 .button {
 	background-color: transparent;
 	border: none;
+	cursor: pointer;
 }
 .dots-icon {
 	cursor: all-scroll;
@@ -99,8 +100,8 @@ h1 {
 
 .delete-icon {
 	cursor: pointer;
-	width: 1rem;
-	height: 1rem;
+	width: 0.5rem;
+	height: 0.5rem;
 }
 
 .clear-completed {
