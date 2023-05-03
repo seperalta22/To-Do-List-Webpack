@@ -5,7 +5,8 @@
 	"private": true,
 	"scripts": {
 		"build": "webpack",
-		"dev": "webpack serve"
+		"dev": "webpack serve",
+		"deploy": "gh-pages -d dist"
 	},
 	"keywords": [
 		"todo",
@@ -18,6 +19,7 @@
 		"eslint": "7.x",
 		"eslint-config-airbnb-base": "14.x",
 		"eslint-plugin-import": "2.x",
+		"gh-pages": "^5.0.0",
 		"hint": "7.x",
 		"html-webpack-plugin": "^5.5.1",
 		"install": "^0.13.0",
