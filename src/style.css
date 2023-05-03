@@ -92,6 +92,12 @@ h1 {
   height: 1rem;
 }
 
+.delete-icon {
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+}
+
 .clear-completed {
   display: flex;
   align-items: center;
@@ -102,4 +108,9 @@ h1 {
   border-top: 1px solid #ccc;
   color: #a8a8a8;
   cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #ccc;
 }

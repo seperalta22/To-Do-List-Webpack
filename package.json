@@ -5,7 +5,7 @@
 	"private": true,
 	"scripts": {
 		"build": "webpack",
-		"dev": "npx webpack serve --config webpack.config.js"
+		"dev": "webpack serve"
 	},
 	"keywords": [
 		"todo",
