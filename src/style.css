@@ -41,15 +41,15 @@ h1 {
 }
 
 .title {
-  font-size: 1rem;
+  font-size: 1.5rem;
   margin: 0;
   font-weight: normal;
 }
 
 .refresh-icon {
   cursor: pointer;
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
 
 .input-container {
@@ -93,16 +93,16 @@ h1 {
   cursor: pointer;
 }
 
-.dots-icon {
+.dots {
   cursor: all-scroll;
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
 }
 
-.delete-icon {
+.trash {
   cursor: pointer;
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .clear-completed {
@@ -113,8 +113,12 @@ h1 {
   padding: 1rem 1rem;
   border: none;
   border-top: 1px solid #ccc;
-  color: #a8a8a8;
+  color: #8b8a8a;
   cursor: pointer;
+}
+
+.clear-completed:hover {
+  background-color: #e8e8e8;
 }
 
 .task-label {
@@ -123,4 +127,5 @@ h1 {
   font-weight: normal;
   border: none;
   width: 100%;
+  padding: 0.5rem;
 }

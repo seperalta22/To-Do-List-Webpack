@@ -1,7 +1,7 @@
 import './style.css';
 import addList from './modules/addList.js';
 import inputAdd from './modules/inputAdd.js';
-import refreshBtn from './modules/refreshBtn';
+import refreshBtn from './modules/refreshBtn.js';
 import { clearCompleted } from './modules/checker.js';
 import refreshIcons from './img/refresh.svg';
 
