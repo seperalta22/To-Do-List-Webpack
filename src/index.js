@@ -1,6 +1,7 @@
 import './style.css';
 import addList from './modules/addList.js';
 import inputAdd from './modules/inputAdd.js';
+import { clearCompleted } from './modules/checker.js';
 import refreshIcons from './img/refresh.svg';
 
 const titleContainer = document.querySelector('.title-container');
@@ -11,10 +12,13 @@ titleContainer.appendChild(refreshIcon);
 
 const addInput = document.getElementById('add-input');
 addInput.addEventListener('keypress', (e) => {
-  if (e.key === 'Enter' && addInput.value !== '') {
-    e.preventDefault();
-    inputAdd();
-  }
+	if (e.key === 'Enter' && addInput.value !== '') {
+		e.preventDefault();
+		inputAdd();
+	}
 });
+
+const clear = document.getElementById('clear-completed');
+clear.addEventListener('click', clearCompleted);
 
 addList();
