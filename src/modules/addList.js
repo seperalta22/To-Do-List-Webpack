@@ -1,5 +1,6 @@
 import saveData from './saveData.js';
 import taskArray from './taskArray.js';
+import { check } from './checker.js';
 import dotsIcon from '../img/dots.svg';
 import trashIcon from '../img/trash.svg';
 
@@ -71,6 +72,11 @@ const addList = () => {
 
     input.addEventListener('focusout', () => {
       button.innerHTML = `<img src="${trashIcon}" alt="trash" class="trash">`;
+    });
+    checkbox.addEventListener('click', () => {
+      check(i);
+      // saveData(); // ver si funciona
+      addList();
     });
   }
   document.querySelector('.input').value = '';
