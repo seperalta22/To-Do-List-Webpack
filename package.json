@@ -15,7 +15,9 @@
 	],
 	"author": "Sergio Peralta",
 	"devDependencies": {
+		"@babel/core": "^7.21.8",
 		"@babel/plugin-transform-modules-commonjs": "^7.21.5",
+		"@babel/preset-env": "^7.21.5",
 		"babel-eslint": "10.x",
 		"babel-jest": "^29.5.0",
 		"css-loader": "^6.7.3",
