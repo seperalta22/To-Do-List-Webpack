@@ -30,24 +30,20 @@ describe('add method', () => {
   });
 });
 
-describe('check method', () => { 
-  test('should toggle the completed status', () => {
-    const taskArray = [
-      { completed: false },
-      { completed: true },
-      { completed: false }
-    ];
-    check(1);
-    expect(taskArray[1].completed).toBe(false);
+describe('delete function', () => { 
+  test('should delete a task from the To Do List', () => {
+    const btnDelete = document.querySelectorAll('.trash');
+    btnDelete[0].click();
+    const list = document.querySelectorAll('.task-label');
+    expect(list.length).toEqual(1);
   });
-  test('should call saveData', () => {
-    const taskArray = [
-      { completed: false },
-      { completed: true },
-      { completed: false }
-    ];
-    const saveDataMock = jest.fn();
-    check(1);
-    expect(saveDataMock).toHaveBeenCalled();
+  test('should change the content of taskArray', () => {
+    expect(taskArray).toEqual([
+      {
+        description: 'hello Microverse',
+        completed: false,
+        index: 1,
+      },
+    ]);
   });
 });

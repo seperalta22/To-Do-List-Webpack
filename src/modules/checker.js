@@ -17,3 +17,4 @@ const clearCompleted = () => {
 };
 
 export { check, clearCompleted };
+
