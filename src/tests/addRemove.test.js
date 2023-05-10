@@ -1,6 +1,5 @@
 import addTask from '../modules/addTask.js';
 import taskArray from '../modules/taskArray.js';
-import { check } from '../modules/checker.js';
 
 document.body.innerHTML = `<div><input type="text" class="input" id="add-input" placeholder="Add to your list...">
 <div class="list-container">
@@ -30,7 +29,7 @@ describe('add method', () => {
   });
 });
 
-describe('delete function', () => { 
+describe('delete function', () => {
   test('should delete a task from the To Do List', () => {
     const btnDelete = document.querySelectorAll('.trash');
     btnDelete[0].click();
