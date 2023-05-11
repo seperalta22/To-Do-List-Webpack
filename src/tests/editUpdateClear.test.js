@@ -52,14 +52,10 @@ describe('check function', () => {
     checkbox.dispatchEvent(new Event('click'));
     expect(document.querySelector('.checkbox').checked).toBe(true);
   });
-  test('should update the taskArray', () => {
+  test('should completed the taskArray', () => {
     const checkbox = document.querySelector('.checkbox');
     checkbox.checked = true;
     checkbox.dispatchEvent(new Event('click'));
-    expect(taskArray).toEqual([{
-      description: '',
-      completed: true,
-      index: 1,
-    }]);
+    expect(taskArray[0].description.style).toBe('line-through');
   });
 });
