@@ -44,3 +44,22 @@ describe('clear function', () => {
     }]);
   });
 });
+
+describe('check function', () => {
+  test('should check the task', () => {
+    const checkbox = document.querySelector('.checkbox');
+    checkbox.checked = true;
+    checkbox.dispatchEvent(new Event('click'));
+    expect(document.querySelector('.checkbox').checked).toBe(true);
+  });
+  test('should update the taskArray', () => {
+    const checkbox = document.querySelector('.checkbox');
+    checkbox.checked = true;
+    checkbox.dispatchEvent(new Event('click'));
+    expect(taskArray).toEqual([{
+      description: '',
+      completed: true,
+      index: 1,
+    }]);
+  });
+});
