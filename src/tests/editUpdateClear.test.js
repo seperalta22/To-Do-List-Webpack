@@ -25,3 +25,22 @@ describe('edit function', () => {
     }]);
   });
 });
+
+describe('clear function', () => {
+  test('should clear the task description', () => {
+    const input = document.querySelector('.task-label');
+    input.value = '';
+    input.dispatchEvent(new Event('input'));
+    expect(document.querySelector('.task-label').value).toBe('');
+  });
+  test('should update the taskArray', () => {
+    const input = document.querySelector('.task-label');
+    input.value = '';
+    input.dispatchEvent(new Event('input'));
+    expect(taskArray).toEqual([{
+      description: '',
+      completed: false,
+      index: 1,
+    }]);
+  });
+});
