@@ -20,7 +20,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 Portfolio ](#-portfolio-)
+- [📖 Todo List Webpack ](#-todo-list-webpack-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -41,7 +41,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Portfolio <a name="about-project"></a>
+# 📖 Todo List Webpack <a name="about-project"></a>
 
 Todo List Webpack is a project with great potential.
 
